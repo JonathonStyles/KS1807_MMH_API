@@ -210,7 +210,7 @@ public class GeneratePlayLists
             rs.close();
 
             //No existing history, just always return yes if so.
-            if (MoodAfterTimeString.equals(""))
+            if (MoodAfterTimeString == null || MoodAfterTimeString.equals(""))
             {
                 return "Yes";
             }
